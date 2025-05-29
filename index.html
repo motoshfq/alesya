@@ -51,73 +51,66 @@
         </div>
     </section>
 
-    <section class="section about-section" id="about">
+    <section class="section" id="about">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">ПРО СЕКЦІЮ</h2>
                 <div class="section-line"></div>
-                <p class="section-subtitle">Дізнайтесь більше про нашу секцію дзюдо та наші досягнення</p>
             </div>
             
             <div class="about-grid">
-                <div class="about-content">
-                    <div class="about-text">
-                        <div class="text-block fade-in-up">
-                            <div class="text-icon">
-                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L18.5 5.5C18.1 4.6 17.2 4 16.2 4H7.8C6.8 4 5.9 4.6 5.5 5.5L3 7V9H5V23H19V9H21ZM13 7V11H11V7H13ZM17 9V21H7V9H17Z" fill="currentColor"/>
-                                </svg>
-                            </div>
-                            <div class="text-content">
-                                <h3>Наша місія</h3>
-                                <p class="lead-text">Запрошуємо на тренування з дзюдо в найкращій секції Полтави. Ми розвиваємо не лише фізичні навички, але й характер, дисципліну та повагу до суперника.</p>
-                            </div>
-                        </div>
+                <div class="about-text">
+                    <div class="text-content">
+                        <p class="lead-text animated-text">Запрошуємо на головну подію у світі юнацької легкої атлетики України — Чемпіонат України з дзюдо серед студентів, який проходить протягом навчального року в Полтаві.</p>
                         
-                        <div class="text-block fade-in-up">
-                            <div class="text-icon">
-                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22S19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9S10.62 6.5 12 6.5S14.5 7.62 14.5 9S13.38 11.5 12 11.5Z" fill="currentColor"/>
-                                </svg>
+                        <div class="expandable-info">
+                            <p class="info-preview">Змагання відбуваються в легкоатлетичному манежі Київської міської школи вищої спортивної майстерності...</p>
+                            <div class="info-full hidden">
+                                <p>Змагання відбуваються в легкоатлетичному манежі Київської міської школи вищої спортивної майстерності за адресою: проспект Павла Тичини, 18.</p>
+                                
+                                <p>Чемпіонат стане платформою для молодих талантів з усієї країни, де вони зможуть продемонструвати свої здібності, встановити особисті рекорди та позмагатися за звання найкращих.</p>
+                                
+                                <div class="additional-info">
+                                    <h4>Особливості змагань:</h4>
+                                    <ul class="feature-list">
+                                        <li><span class="feature-icon">🏆</span>Офіційний статус чемпіонату України</li>
+                                        <li><span class="feature-icon">📊</span>Електронна система суддівства</li>
+                                        <li><span class="feature-icon">🎥</span>Онлайн трансляція всіх боїв</li>
+                                        <li><span class="feature-icon">🏅</span>Нагородження переможців</li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="text-content">
-                                <h3>Наше місце</h3>
-                                <p>Тренування відбуваються в сучасному спортивному залі за адресою: м. Полтава, вул. Володимира Козака, 5. Зал обладнаний усім необхідним для безпечних та ефективних тренувань.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="text-block fade-in-up">
-                            <div class="text-icon">
-                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 2L15.09 8.26L22 9L17 14L18.18 21L12 17.77L5.82 21L7 14L2 9L8.91 8.26L12 2Z" fill="currentColor"/>
-                                </svg>
-                            </div>
-                            <div class="text-content">
-                                <h3>Наші досягнення</h3>
-                                <p>Секція стала платформою для молодих талантів з усієї області, де вони змогли продемонструвати свої здібності, встановити особисті рекорди та позмагатися за звання найкращих.</p>
-                            </div>
+                            <button class="expand-btn" onclick="toggleInfo()">
+                                <span class="btn-text">Детальніше</span>
+                                <span class="btn-arrow">↓</span>
+                            </button>
                         </div>
                     </div>
                     
-                    <div class="features-grid">
-                        <div class="feature-card interactive-card">
-                            <div class="feature-icon">
-                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M9 11H7L9 13L11 11H9V7H13V9H15L13 7L11 9H13V5H9V11ZM20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 18H4V6H20V18Z" fill="currentColor"/>
-                                </svg>
+                    <div class="interactive-timeline">
+                        <h4 class="timeline-title">Етапи підготовки</h4>
+                        <div class="timeline">
+                            <div class="timeline-item active" data-step="1">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h5>Реєстрація учасників</h5>
+                                    <p>До 15 листопада</p>
+                                </div>
                             </div>
-                            <h4>Сучасні методики</h4>
-                            <p>Використовуємо найкращі світові практики навчання дзюдо</p>
-                        </div>
-                        
-                        <div class="feature-card interactive-card">
-                            <div class="feature-icon">
-                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M16 4C18.2 4 20 5.8 20 8S18.2 12 16 12C13.8 12 12 10.2 12 8S13.8 4 16 4ZM8 4C10.2 4 12 5.8 12 8S10.2 12 8 12C5.8 12 4 10.2 4 8S5.8 4 8 4ZM8 14C12.42 14 16 15.79 16 18V20H0V18C0 15.79 3.58 14 8 14ZM16 14C20.42 14 24 15.79 24 18V20H18V18C18 16.5 17.5 15.16 16.64 14.09C16.43 14.03 16.22 14 16 14Z" fill="currentColor"/>
-                                </svg>
+                            <div class="timeline-item" data-step="2">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h5>Жеребкування</h5>
+                                    <p>20 листопада</p>
+                                </div>
                             </div>
-                            <h4>Команда однодумців</h4>
-                            <p>Дружня атмосфера та взаємопідтримка в колективі</p>
+                            <div class="timeline-item" data-step="3">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h5>Початок змагань</h5>
+                                    <p>25 листопада</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -125,183 +118,97 @@
                 <div class="about-stats">
                     <div class="stats-container">
                         <div class="stats-header">
-                            <h3>Наші досягнення</h3>
-                            <div class="stats-decoration"></div>
-                        </div>
-                        
-                        <div class="stats-grid">
-                            <div class="stat-card animated-stat" data-target="50">
-                                <div class="stat-icon">
-                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M16 4C18.2 4 20 5.8 20 8S18.2 12 16 12C13.8 12 12 10.2 12 8S13.8 4 16 4ZM8 4C10.2 4 12 5.8 12 8S10.2 12 8 12C5.8 12 4 10.2 4 8S5.8 4 8 4ZM8 14C12.42 14 16 15.79 16 18V20H0V18C0 15.79 3.58 14 8 14ZM16 14C20.42 14 24 15.79 24 18V20H18V18C18 16.5 17.5 15.16 16.64 14.09C16.43 14.03 16.22 14 16 14Z" fill="currentColor"/>
-                                    </svg>
-                                </div>
-                                <span class="stat-number">0</span>
-                                <span class="stat-suffix">+</span>
-                                <span class="stat-desc">активних учасників</span>
-                            </div>
-                            
-                            <div class="stat-card animated-stat" data-target="5">
-                                <div class="stat-icon">
-                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 2C6.48 2 2 6.48 2 12S6.48 22 12 22 22 17.52 22 12 17.52 2 12 2ZM13 17H11V15H13V17ZM13 13H11V7H13V13Z" fill="currentColor"/>
-                                    </svg>
-                                </div>
-                                <span class="stat-number">0</span>
-                                <span class="stat-suffix"></span>
-                                <span class="stat-desc">років досвіду</span>
-                            </div>
-                            
-                            <div class="stat-card animated-stat" data-target="25">
-                                <div class="stat-icon">
-                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 2L15.09 8.26L22 9L17 14L18.18 21L12 17.77L5.82 21L7 14L2 9L8.91 8.26L12 2Z" fill="currentColor"/>
-                                    </svg>
-                                </div>
-                                <span class="stat-number">0</span>
-                                <span class="stat-suffix">+</span>
-                                <span class="stat-desc">переможців змагань</span>
-                            </div>
-                            
-                            <div class="stat-card animated-stat" data-target="100">
-                                <div class="stat-icon">
-                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 6C10.9 6 10 6.9 10 8S10.9 10 12 10 14 9.1 14 8 13.1 6 12 6ZM21 16V14L18.6 12.8C18.9 12.1 19 11.3 19 10.5S18.9 9.9 18.6 9.2L21 8V6L18.6 4.8C18.2 4.1 17.6 3.4 16.9 2.8L18 1L16 1L14.4 2.6C13.6 2.2 12.8 2 12 2S10.4 2.2 9.6 2.6L8 1L6 1L7.1 2.8C6.4 3.4 5.8 4.1 5.4 4.8L3 6V8L5.4 9.2C5.1 9.9 5 10.7 5 11.5S5.1 13.1 5.4 13.8L3 15V17L5.4 18.2C5.8 18.9 6.4 19.6 7.1 20.2L6 22L8 22L9.6 20.4C10.4 20.8 11.2 21 12 21S13.6 20.8 14.4 20.4L16 22L18 22L16.9 20.2C17.6 19.6 18.2 18.9 18.6 18.2L21 17V15L18.6 13.8C18.9 13.1 19 12.3 19 11.5C19 11.2 19 10.9 18.9 10.6L21 16Z" fill="currentColor"/>
-                                        <circle cx="12" cy="11.5" r="2.5" fill="white"/>
-                                    </svg>
-                                </div>
-                                <span class="stat-number">0</span>
-                                <span class="stat-suffix">%</span>
-                                <span class="stat-desc">рівень підготовки</span>
+                            <h4>Статистика змагань</h4>
+                            <div class="stats-toggle">
+                                <button class="toggle-btn active" data-view="participants">Учасники</button>
+                                <button class="toggle-btn" data-view="regions">Регіони</button>
                             </div>
                         </div>
                         
-                        <div class="progress-section">
-                            <h4>Прогрес секції</h4>
-                            <div class="progress-bars">
-                                <div class="progress-item">
-                                    <span class="progress-label">Технічна підготовка</span>
-                                    <div class="progress-bar">
-                                        <div class="progress-fill" data-width="95"></div>
-                                    </div>
-                                    <span class="progress-value">95%</span>
+                        <div class="stats-grid" id="participants-stats">
+                            <div class="stat-card hover-card" data-category="participants">
+                                <div class="stat-icon">👥</div>
+                                <span class="stat-big counter" data-target="100">0</span>
+                                <span class="stat-desc">заявлено учасників</span>
+                                <div class="stat-progress">
+                                    <div class="progress-bar" style="--progress: 85%"></div>
                                 </div>
-                                
-                                <div class="progress-item">
-                                    <span class="progress-label">Фізична підготовка</span>
-                                    <div class="progress-bar">
-                                        <div class="progress-fill" data-width="88"></div>
-                                    </div>
-                                    <span class="progress-value">88%</span>
+                            </div>
+                            
+                            <div class="stat-card hover-card" data-category="clubs">
+                                <div class="stat-icon">🏛️</div>
+                                <span class="stat-big counter" data-target="20">0</span>
+                                <span class="stat-desc">клубів та команд</span>
+                                <div class="stat-progress">
+                                    <div class="progress-bar" style="--progress: 75%"></div>
                                 </div>
-                                
-                                <div class="progress-item">
-                                    <span class="progress-label">Змагальна активність</span>
-                                    <div class="progress-bar">
-                                        <div class="progress-fill" data-width="92"></div>
-                                    </div>
-                                    <span class="progress-value">92%</span>
+                            </div>
+                            
+                            <div class="stat-card hover-card" data-category="categories">
+                                <div class="stat-icon">🥋</div>
+                                <span class="stat-big counter" data-target="8">0</span>
+                                <span class="stat-desc">вагових категорій</span>
+                                <div class="stat-progress">
+                                    <div class="progress-bar" style="--progress: 100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="stats-grid hidden" id="regions-stats">
+                            <div class="stat-card hover-card">
+                                <div class="stat-icon">🌍</div>
+                                <span class="stat-big counter" data-target="12">0</span>
+                                <span class="stat-desc">областей України</span>
+                                <div class="stat-progress">
+                                    <div class="progress-bar" style="--progress: 60%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="stat-card hover-card">
+                                <div class="stat-icon">🏙️</div>
+                                <span class="stat-big counter" data-target="35">0</span>
+                                <span class="stat-desc">міст учасників</span>
+                                <div class="stat-progress">
+                                    <div class="progress-bar" style="--progress: 70%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="stat-card hover-card">
+                                <div class="stat-icon">🎯</div>
+                                <span class="stat-big counter" data-target="5">0</span>
+                                <span class="stat-desc">регіональних центрів</span>
+                                <div class="stat-progress">
+                                    <div class="progress-bar" style="--progress: 90%"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            
-            <div class="about-cta">
-                <div class="cta-content">
-                    <h3>Готові приєднатися до нас?</h3>
-                    <p>Розпочніть свій шлях у дзюдо вже сьогодні</p>
-                    <button class="cta-button pulse-animation">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z" fill="currentColor"/>
-                        </svg>
-                        Зв'язатися з нами
-                    </button>
+                    
+                    <!-- Интерактивная карта участников -->
+                    <div class="participants-map">
+                        <h4>Географія учасників</h4>
+                        <div class="map-container">
+                            <div class="region-dot" style="top: 20%; left: 30%" data-region="Київ" data-count="25">
+                                <div class="pulse"></div>
+                            </div>
+                            <div class="region-dot" style="top: 45%; left: 40%" data-region="Полтава" data-count="18">
+                                <div class="pulse"></div>
+                            </div>
+                            <div class="region-dot" style="top: 60%; left: 25%" data-region="Дніпро" data-count="15">
+                                <div class="pulse"></div>
+                            </div>
+                            <div class="region-dot" style="top: 30%; left: 60%" data-region="Харків" data-count="12">
+                                <div class="pulse"></div>
+                            </div>
+                            <div class="region-dot" style="top: 70%; left: 45%" data-region="Запоріжжя" data-count="8">
+                                <div class="pulse"></div>
+                            </div>
+                        </div>
+                        <div class="map-tooltip hidden"></div>
+                    </div>
                 </div>
             </div>
         </div>
-        
-        <script>
-            // Animation on scroll
-            const observerOptions = {
-                threshold: 0.1,
-                rootMargin: '0px 0px -50px 0px'
-            };
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                        
-                        // Animate counters
-                        if (entry.target.classList.contains('animated-stat')) {
-                            animateCounter(entry.target);
-                        }
-                        
-                        // Animate progress bars
-                        if (entry.target.classList.contains('progress-bars')) {
-                            animateProgressBars(entry.target);
-                        }
-                    }
-                });
-            }, observerOptions);
-
-            // Observe elements
-            document.querySelectorAll('.fade-in-up, .animated-stat, .progress-bars, .interactive-card').forEach(el => {
-                observer.observe(el);
-            });
-
-            // Counter animation
-            function animateCounter(element) {
-                const target = parseInt(element.dataset.target);
-                const numberElement = element.querySelector('.stat-number');
-                const duration = 2000;
-                const step = target / (duration / 16);
-                let current = 0;
-
-                const timer = setInterval(() => {
-                    current += step;
-                    if (current >= target) {
-                        current = target;
-                        clearInterval(timer);
-                    }
-                    numberElement.textContent = Math.floor(current);
-                }, 16);
-            }
-
-            // Progress bars animation
-            function animateProgressBars(container) {
-                const progressFills = container.querySelectorAll('.progress-fill');
-                progressFills.forEach((fill, index) => {
-                    setTimeout(() => {
-                        const width = fill.dataset.width;
-                        fill.style.width = width + '%';
-                    }, index * 200);
-                });
-            }
-
-            // Interactive cards hover effect
-            document.querySelectorAll('.interactive-card').forEach(card => {
-                card.addEventListener('mouseenter', function() {
-                    this.style.transform = 'translateY(-10px) scale(1.02)';
-                });
-                
-                card.addEventListener('mouseleave', function() {
-                    this.style.transform = 'translateY(0) scale(1)';
-                });
-            });
-
-            // CTA button click handler
-            document.querySelector('.cta-button').addEventListener('click', function() {
-                this.classList.add('clicked');
-                setTimeout(() => {
-                    this.classList.remove('clicked');
-                    // Here you can add actual contact functionality
-                    window.location.href = 'tel:+380997107296';
-                }, 300);
-            });
-        </script>
     </section>
 
     <section class="section trainers-section" id="trainers">

@@ -1,3 +1,141 @@
+// Анимация счетчиков
+function animateCounters() {
+    const counters = document.querySelectorAll('.counter');
+    
+    counters.forEach(counter => {
+        const target = parseInt(counter.getAttribute('data-target'));
+        const duration = 2000;
+        const increment = target / (duration / 16);
+        let current = 0;
+        
+        const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+                counter.textContent = target + '+';
+                clearInterval(timer);
+            } else {
+                counter.textContent = Math.floor(current);
+            }
+        }, 16);
+    });
+}
+
+// Intersection Observer для анимации при скролле
+const observerOptions = {
+    threshold: 0.5,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('animate-in');
+            if (entry.target.classList.contains('stats-container')) {
+                animateCounters();
+            }
+        }
+    });
+}, observerOptions);
+
+// Наблюдаем за элементами
+document.querySelectorAll('.about-text, .stats-container, .participants-map').forEach(el => {
+    observer.observe(el);
+});
+
+// Переключение статистики
+document.querySelectorAll('.toggle-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const view = btn.getAttribute('data-view');
+        
+        // Активная кнопка
+        document.querySelectorAll('.toggle-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        
+        // Показать/скрыть статистику
+        document.querySelectorAll('.stats-grid').forEach(grid => {
+            grid.classList.add('hidden');
+        });
+        document.getElementById(view + '-stats').classList.remove('hidden');
+        
+        // Перезапуск анимации счетчиков
+        setTimeout(animateCounters, 300);
+    });
+});
+
+// Развертывание информации
+function toggleInfo() {
+    const expandable = document.querySelector('.expandable-info');
+    const fullInfo = document.querySelector('.info-full');
+    const btn = document.querySelector('.expand-btn');
+    const arrow = document.querySelector('.btn-arrow');
+    const btnText = document.querySelector('.btn-text');
+    
+    if (fullInfo.classList.contains('hidden')) {
+        fullInfo.classList.remove('hidden');
+        expandable.classList.add('expanded');
+        arrow.style.transform = 'rotate(180deg)';
+        btnText.textContent = 'Згорнути';
+    } else {
+        fullInfo.classList.add('hidden');
+        expandable.classList.remove('expanded');
+        arrow.style.transform = 'rotate(0deg)';
+        btnText.textContent = 'Детальніше';
+    }
+}
+
+// Интерактивный timeline
+document.querySelectorAll('.timeline-item').forEach((item, index) => {
+    item.addEventListener('click', () => {
+        document.querySelectorAll('.timeline-item').forEach(i => i.classList.remove('active'));
+        item.classList.add('active');
+        
+        // Анимация прогресса
+        const progress = ((index + 1) / document.querySelectorAll('.timeline-item').length) * 100;
+        document.querySelector('.timeline::before').style.height = progress + '%';
+    });
+});
+
+// Интерактивная карта
+document.querySelectorAll('.region-dot').forEach(dot => {
+    dot.addEventListener('mouseenter', (e) => {
+        const tooltip = document.querySelector('.map-tooltip');
+        const region = dot.getAttribute('data-region');
+        const count = dot.getAttribute('data-count');
+        
+        tooltip.innerHTML = `<strong>${region}</strong><br>${count} учасників`;
+        tooltip.classList.remove('hidden');
+        
+        const rect = dot.getBoundingClientRect();
+        const mapRect = document.querySelector('.map-container').getBoundingClientRect();
+        
+        tooltip.style.left = (rect.left - mapRect.left + 20) + 'px';
+        tooltip.style.top = (rect.top - mapRect.top - 40) + 'px';
+    });
+    
+    dot.addEventListener('mouseleave', () => {
+        document.querySelector('.map-tooltip').classList.add('hidden');
+    });
+});
+
+// Hover эффекты для карточек статистики
+document.querySelectorAll('.stat-card').forEach(card => {
+    card.addEventListener('mouseenter', () => {
+        card.style.transform = 'translateY(-10px) scale(1.02)';
+    });
+    
+    card.addEventListener('mouseleave', () => {
+        card.style.transform = 'translateY(0) scale(1)';
+    });
+});
+
+// Запуск начальных анимаций
+document.addEventListener('DOMContentLoaded', () => {
+    // Анимация текста
+    setTimeout(() => {
+        document.querySelector('.animated-text').classList.add('fade-in');
+    }, 500);
+});
+
 // === MOBILE MENU === 
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
@@ -178,7 +316,7 @@ function animateCounters() {
 
 // Trigger counter animation when hero section is visible
 const heroSection = document.querySelector('.hero');
-const observer = new IntersectionObserver((entries) => {
+const observer2 = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             animateCounters();
@@ -187,7 +325,7 @@ const observer = new IntersectionObserver((entries) => {
     });
 });
 
-observer.observe(heroSection);
+observer2.observe(heroSection);
 
 // === PROGRESS BARS ANIMATION ===
 function animateProgressBars() {
@@ -280,3 +418,4 @@ window.addEventListener('load', function() {
         document.body.style.opacity = '1';
     }, 100);
 });
+
