@@ -124,7 +124,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('img/olesya-bulla-4.jpg');
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(255,191,36,0.1)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/><circle cx="200" cy="300" r="3" fill="rgba(255,191,36,0.3)"/><circle cx="800" cy="150" r="2" fill="rgba(255,191,36,0.2)"/><circle cx="600" cy="700" r="4" fill="rgba(255,191,36,0.25)"/><circle cx="100" cy="800" r="2" fill="rgba(255,191,36,0.2)"/></svg>');
     animation: gridMove 20s linear infinite;
 }
 
@@ -310,9 +310,50 @@ body {
     padding: 3rem;
     box-shadow: 0 10px 40px rgba(0,0,0,0.1);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 300px 1fr;
     gap: 3rem;
     align-items: center;
+}
+
+.trainer-photo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trainer-image {
+    width: 220px;
+    height: 280px;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+    border: 4px solid #fbbf24;
+}
+
+.trainer-badge {
+    position: absolute;
+    bottom: -15px;
+    background: #fbbf24;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 16px rgba(251, 191, 36, 0.4);
+}
+
+.badge-icon {
+    font-size: 1.1rem;
+}
+
+.trainer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .trainer-info h3 {
@@ -328,6 +369,7 @@ body {
     font-weight: 700;
     color: #1e293b;
     margin-bottom: 2rem;
+    line-height: 1.2;
 }
 
 .trainer-credentials {
@@ -342,16 +384,21 @@ body {
     gap: 12px;
     font-size: 1.1rem;
     color: #475569;
+    padding: 8px 0;
 }
 
 .credential-icon {
     font-size: 1.3rem;
+    width: 24px;
+    text-align: center;
 }
 
 .trainer-contact {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e2e8f0;
 }
 
 .contact-item {
@@ -364,6 +411,7 @@ body {
     font-size: 1.5rem;
     width: 40px;
     text-align: center;
+    color: #fbbf24;
 }
 
 .contact-details {
@@ -388,6 +436,22 @@ body {
 
 .contact-value:hover {
     color: #fbbf24;
+}
+
+@media (max-width: 768px) {
+    .trainer-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 2rem;
+    }
+    
+    .trainer-photo {
+        margin-bottom: 1rem;
+    }
+    
+    .trainer-name {
+        font-size: 1.8rem;
+    }
 }
 
 /* === TECHNIQUES SECTION === */
