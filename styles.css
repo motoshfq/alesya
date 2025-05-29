@@ -302,40 +302,40 @@ body {
 /* === TRAINERS SECTION === */
 .trainers-section {
     background: #f8fafc;
-    padding: 5rem 0;
+    padding: 6rem 0;
 }
 
 .section-header {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
 }
 
 .section-title {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 700;
     color: #1e293b;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .section-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: #64748b;
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
 .trainers-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    gap: 3rem;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
 .trainer-card {
     background: white;
-    border-radius: 16px;
-    padding: 2rem;
+    border-radius: 20px;
+    padding: 3rem;
     box-shadow: 0 10px 40px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
@@ -351,53 +351,55 @@ body {
 
 .trainer-photo {
     position: relative;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .trainer-image {
-    width: 180px;
-    height: 220px;
-    border-radius: 12px;
+    width: 240px;
+    height: 300px;
+    border-radius: 16px;
     object-fit: cover;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
-    border: 3px solid #fbbf24;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.2);
+    border: 4px solid #fbbf24;
 }
 
 .trainer-image-placeholder {
-    width: 180px;
-    height: 220px;
-    border-radius: 12px;
+    width: 240px;
+    height: 300px;
+    border-radius: 16px;
     background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%);
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 3px dashed #94a3b8;
+    border: 4px dashed #94a3b8;
 }
 
 .placeholder-icon {
     color: #94a3b8;
+    width: 80px;
+    height: 80px;
 }
 
 .trainer-badge {
     position: absolute;
-    bottom: -10px;
+    bottom: -12px;
     left: 50%;
     transform: translateX(-50%);
     background: #fbbf24;
     color: white;
-    padding: 6px 12px;
-    border-radius: 16px;
+    padding: 10px 18px;
+    border-radius: 20px;
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 8px;
     font-weight: 600;
-    font-size: 0.8rem;
-    box-shadow: 0 4px 16px rgba(251, 191, 36, 0.4);
+    font-size: 1rem;
+    box-shadow: 0 6px 20px rgba(251, 191, 36, 0.4);
 }
 
 .badge-icon {
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     color: white;
 }
 
@@ -406,32 +408,32 @@ body {
 }
 
 .trainer-name {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     font-weight: 700;
     color: #1e293b;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     line-height: 1.3;
 }
 
 .trainer-credentials {
     display: flex;
     flex-direction: column;
-    gap: 0.8rem;
-    margin-bottom: 1.5rem;
+    gap: 1.2rem;
+    margin-bottom: 2rem;
 }
 
 .credential-item {
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-size: 1rem;
+    gap: 12px;
+    font-size: 1.1rem;
     color: #475569;
     justify-content: flex-start;
 }
 
 .credential-icon {
-    width: 18px;
-    height: 18px;
+    width: 22px;
+    height: 22px;
     color: #fbbf24;
     flex-shrink: 0;
 }
@@ -444,19 +446,19 @@ body {
 .contact-item {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     justify-content: center;
 }
 
 .contact-icon {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     color: #fbbf24;
     flex-shrink: 0;
 }
 
 .contact-value {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #1e293b;
     font-weight: 500;
     text-decoration: none;
@@ -488,30 +490,30 @@ body {
 @media (max-width: 768px) {
     .trainers-grid {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
+        gap: 2rem;
         padding: 0 1rem;
     }
     
     .trainer-card {
-        padding: 1.5rem;
+        padding: 2rem;
     }
     
     .trainer-image,
     .trainer-image-placeholder {
-        width: 150px;
-        height: 180px;
+        width: 200px;
+        height: 250px;
     }
     
     .section-title {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     
     .trainer-name {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
     
     .trainers-section {
-        padding: 3rem 0;
+        padding: 4rem 0;
     }
 }
 
