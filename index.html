@@ -1,253 +1,351 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Олеся Булла | Українська дзюдоїстка</title>
+    <title>Секция дзюдо - Донецкий областной колледж им. С. Бубки</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <div class="nav-container">
-        <div class="nav-inner">
-            <a href="#" class="logo">
-                <i class="fas fa-medal logo-icon"></i>
-                <span class="logo-text">Олеся</span>
-            </a>
-            <button class="mobile-menu-toggle">
-                <div></div>
-                <div></div>
-                <div></div>
-            </button>
-            <div class="nav-links">
-                <a href="#biography" class="nav-link">Біографія</a>
-                <a href="#career" class="nav-link">Кар'єра</a>
-                <a href="#style" class="nav-link">Стиль боротьби</a>
-                <a href="#gallery" class="nav-link">Галерея</a>
-                <a href="#personal-info" class="nav-link">Особиста інформація</a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="logo">ДЗЮДО</span>
+                <span class="subtitle">Коледж ім. С. Бубки</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#about">Про секцію</a></li>
+                <li><a href="#trainer">Тренер</a></li>
+                <li><a href="#techniques">Техніки</a></li>
+                <li><a href="#registration">Записатися</a></li>
+                <li><a href="#contact">Контакти</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
-    </div>
+    </nav>
 
-    <!-- Hero Section -->
-    <header>
-        <!-- Decorative shapes -->
-        <div class="hero-shapes">
-            <div class="hero-shape shape1"></div>
-            <div class="hero-shape shape2"></div>
-            <div class="hero-shape shape3"></div>
+    <section class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <h1>СЕКЦІЯ ДЗЮДО</h1>
+            <p class="hero-subtitle">Донецький обласний спеціалізований фаховий коледж спортивного профілю ім. С. Бубки</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">років досвіду</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">випускників</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">25+</span>
+                    <span class="stat-label">медалей</span>
+                </div>
+            </div>
+            <a href="#registration" class="cta-button">ПРИЄДНАТИСЯ ДО КОМАНДИ</a>
         </div>
-        
+    </section>
+
+    <section class="section" id="about">
         <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">Олеся</h1>
-                <div class="hero-badge">Дзюдо</div>
-                <p class="subtitle">Молода перспективна українська дзюдоїстка з Бахмута, яка демонструє значний потенціал та майстерність</p>
+            <div class="section-header">
+                <h2 class="section-title">ПРО СЕКЦІЮ</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="lead-text">Запрошуємо на головну подію у світі юнацької легкої атлетики України — Чемпіонат України з дзюдо серед студентів, який проходить протягом навчального року в Полтаві.</p>
+                    
+                    <p>Змагання відбуваються в легкоатлетичному манежі Київської міської школи вищої спортивної майстерності за адресою: проспект Павла Тичини, 18.</p>
+                    
+                    <p>Чемпіонат стане платформою для молодих талантів з усієї країни, де вони зможуть продемонструвати свої здібності, встановити особисті рекорди та позмагатися за звання найкращих.</p>
+                </div>
                 
-                <div class="hero-buttons">
-                    <a href="#gallery" class="hero-btn btn-primary">Галерея</a>
-                    <a href="#personal-info" class="hero-btn btn-secondary">Дізнатися більше</a>
-                </div>
-            </div>
-            
-            <div class="scroll-hint">
-                <span>Прокрутіть вниз</span>
-                <i class="fas fa-chevron-down"></i>
-            </div>
-        </div>
-    </header>
-
-    <main class="container">
-        <section id="biography">
-            <div class="section-icon"><i class="fas fa-user"></i></div>
-            <h2>Біографія</h2>
-            <div class="bio-content">
-                <div class="bio-text">
-                    <p>Олеся народилася у 2008 році в місті Бахмут Донецької області. З раннього дитинства вона проявляла інтерес до спорту та активного способу життя. Її спортивний шлях розпочався з вільної боротьби, де вона здобула перші навички боротьби та розвинула фізичні якості.</p>
-                    <p>Згодом Олеся почала займатися самбо, що дозволило їй розширити свій арсенал технік та прийомів. Ці види спорту заклали міцний фундамент для її майбутньої кар'єри в дзюдо.</p>
-                </div>
-                <div class="bio-image">
-                    <img src="img/olesya-bulla.jpg" alt="Олеся" class="profile-img">
-                </div>
-            </div>
-        </section>
-
-        <div class="section-divider">
-            <span><i class="fas fa-trophy"></i></span>
-        </div>
-
-        <section id="career">
-            <div class="section-icon"><i class="fas fa-medal"></i></div>
-            <h2>Кар'єра в дзюдо</h2>
-            <p>Вирішальний поворот у спортивній кар'єрі Олесі відбувся, коли вона вступила до Коледжу імені Сергія Бубки. Саме тут вона почала серйозно займатися дзюдо під керівництвом досвідченого тренера Павла Прихидного.</p>
-            <p>Попередній досвід у вільній боротьбі та самбо дозволив Олесі швидко адаптуватися до нового виду спорту та показати значний прогрес. Вона швидко опанувала основні техніки дзюдо та досягла рівня зеленого поясу.</p>
-            <p>Незважаючи на відносно короткий період занять дзюдо, Олеся вже має вагомі досягнення. Вона стала переможницею Кубка Донецької області у ваговій категорії 48 кг, продемонструвавши відмінну техніку та тактичну майстерність.</p>
-            <p>На чемпіонаті Донецької області серед спортсменів до 18 років Олеся виборола срібну медаль, поступившись лише більш досвідченій суперниці у фінальному поєдинку.</p>
-
-            <div class="achievements">
-                <div class="achievement-card">
-                    <div class="achievement-icon">🏆</div>
-                    <p>Переможниця Кубка Донецької області</p>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon">🥈</div>
-                    <p>Призерка чемпіонату Донецької області</p>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon">🥋</div>
-                    <p>Учасниця чемпіонату України</p>
-                </div>
-            </div>
-        </section>
-
-        <div class="section-divider">
-            <span><i class="fas fa-fist-raised"></i></span>
-        </div>
-
-        <section id="style">
-            <div class="section-icon"><i class="fas fa-dumbbell"></i></div>
-            <h2>Стиль боротьби</h2>
-            <div class="style-content">
-                <div class="style-text">
-                    <p>Олеся відзначається технічним стилем боротьби, який поєднує елементи, запозичені з вільної боротьби та самбо, з класичними техніками дзюдо. Її коронними прийомами є Учі-мата (кидок через стегно з захопленням зсередини) та О-учі-гарі (велика підсічка зсередини).</p>
-                    <p>Завдяки своїй фізичній підготовці та природній спритності, Олеся ефективно використовує швидкість та технічну майстерність, щоб компенсувати можливу перевагу суперниць у силі.</p>
-                </div>
-                <div class="style-image">
-                    <img src="img/olesya-bulla-10.jpg" alt="Стиль боротьби Олесі" class="style-img">
-                </div>
-            </div>
-            
-            <div class="style-quote">
-                <blockquote>
-                    "У дзюдо перемагає не той, хто сильніший, а той, хто більш технічний та розумний"
-                </blockquote>
-            </div>
-        </section>
-
-        <div class="section-divider">
-            <span><i class="fas fa-camera"></i></span>
-        </div>
-
-        <section id="gallery">
-            <div class="section-icon"><i class="fas fa-images"></i></div>
-            <h2>Галерея</h2>
-            <p>Тренування та змагання Олесі карбуються не тільки в її пам'яті, але й у фотографіях, що відображають її прагнення до спортивної досконалості та наполегливу працю на шляху до перемог.</p>
-            
-            <div class="gallery-container">
-                <div class="gallery-item">
-                    <img src="img/olesya-bulla-2.jpg" alt="Учі-мата">
-                </div>
-                <div class="gallery-item">
-                    <img src="img/olesya-bulla-3.jpg" alt="О-учі-гарі">
-                </div>
-                <div class="gallery-item">
-                    <img src="img/olesya-bulla-4.jpg" alt="Осаекомі-вадза">
-                </div>
-                <div class="gallery-item">
-                    <img src="img/olesya-bulla-5.jpg" alt="Тренування">
-                </div>
-                <div class="gallery-item">
-                    <img src="img/olesya-bulla-6.jpg" alt="Змагання">
-                </div>
-                <div class="gallery-item">
-                    <img src="img/olesya-bulla-7.jpg" alt="Нагорода">
-                </div>
-            </div>
-        </section>
-
-        <div class="section-divider">
-            <span><i class="fas fa-id-card"></i></span>
-        </div>
-
-        <!-- Fullscreen gallery view -->
-        <div class="gallery-fullscreen">
-            <img src="" alt="Повноекранне зображення">
-            <div class="gallery-close"><i class="fas fa-times"></i></div>
-            <div class="gallery-counter">1 / 6</div>
-            <div class="gallery-nav">
-                <button class="gallery-prev"><i class="fas fa-chevron-left"></i></button>
-                <button class="gallery-next"><i class="fas fa-chevron-right"></i></button>
-            </div>
-        </div>
-
-        <section id="personal-info">
-            <div class="section-icon"><i class="fas fa-info-circle"></i></div>
-            <h2>Особиста інформація</h2>
-            <div class="info-grid">
-                <div class="info-item">
-                    <i class="fas fa-user info-icon"></i>
-                    <span class="info-label">Повне ім'я</span>
-                    <span class="info-value">Олеся</span>
-                    <p class="info-description">Молода перспективна дзюдоїстка, яка представляє Україну на регіональних змаганнях.</p>
-                    <div class="info-footer">
-                        <img src="img/olesya-bulla.jpg" alt="Профіль"> <span>Профіль спортсменки</span>
-                    </div>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-flag info-icon"></i>
-                    <span class="info-label">Громадянство</span>
-                    <span class="info-value">Україна</span>
-                    <p class="info-description">Гордо представляє Україну на змаганнях з дзюдо в молодіжних категоріях.</p>
-                    <div class="info-footer">
-                        <i class="fas fa-map-marker-alt"></i> <span>Східна Україна</span>
-                    </div>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-map-pin info-icon"></i>
-                    <span class="info-label">Місце народження</span>
-                    <span class="info-value">Бахмут, Донецька область</span>
-                    <p class="info-description">Народилася та почала тренуватися в Бахмуті, місті з багатою спортивною традицією.</p>
-                    <div class="info-footer">
-                        <i class="fas fa-calendar-alt"></i> <span>2008 рік</span>
-                    </div>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-graduation-cap info-icon"></i>
-                    <span class="info-label">Клуб</span>
-                    <span class="info-value">Коледж ім. Бубки</span>
-                    <p class="info-description">Навчається та тренується в Коледжі імені видатного спортсмена Сергія Бубки.</p>
-                    <div class="info-footer">
-                        <i class="fas fa-trophy"></i> <span>Престижний спортивний заклад</span>
-                    </div>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-fist-raised info-icon"></i>
-                    <span class="info-label">Вагова категорія</span>
-                    <span class="info-value">48 кг</span>
-                    <p class="info-description">Виступає у найлегшій ваговій категорії, де швидкість і техніка мають вирішальне значення.</p>
-                    <div class="info-footer">
-                        <i class="fas fa-bolt"></i> <span>Швидкість та спритність</span>
-                    </div>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-chalkboard-teacher info-icon"></i>
-                    <span class="info-label">Тренер</span>
-                    <span class="info-value">Павло Прихидний</span>
-                    <p class="info-description">Тренується під керівництвом досвідченого тренера з дзюдо, який виховав багатьох чемпіонів.</p>
-                    <div class="info-footer">
-                        <i class="fas fa-medal"></i> <span>Досвідчений наставник</span>
+                <div class="about-stats">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <span class="stat-big">100+</span>
+                            <span class="stat-desc">заявлено учасників</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-big">12</span>
+                            <span class="stat-desc">учасники з областей</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-big">20+</span>
+                            <span class="stat-desc">клубів та команд</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer>
+    <section class="section trainer-section" id="trainer">
         <div class="container">
-            <p>&copy; <span class="year">2023</span> Олеся | Бахмут, Україна</p>
-            <p>Коледж ім. Бубки | Тренер: Павло Прихидний</p>
-            <div class="back-to-top">
-                <a href="#" title="Повернутися наверх">
-                    <i class="fas fa-chevron-up"></i>
-                </a>
+            <div class="trainer-card">
+                <div class="trainer-info">
+                    <h3>Наш тренер</h3>
+                    <h2 class="trainer-name">Павло Володимирович Прихидний</h2>
+                    <div class="trainer-credentials">
+                        <div class="credential-item">
+                            <span class="credential-icon">🥋</span>
+                            <span>Майстер спорту з дзюдо</span>
+                        </div>
+                        <div class="credential-item">
+                            <span class="credential-icon">🏆</span>
+                            <span>15+ років тренерського досвіду</span>
+                        </div>
+                        <div class="credential-item">
+                            <span class="credential-icon">🎖️</span>
+                            <span>Підготував 25+ переможців змагань</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-contact">
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <div class="contact-details">
+                            <span class="contact-label">Телефон</span>
+                            <a href="tel:+380997107296" class="contact-value">+380 99 710 72 96</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div class="contact-details">
+                            <span class="contact-label">Адреса</span>
+                            <span class="contact-value">г. Полтава, вул. Володимира Козака, 5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section techniques-section" id="techniques">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">ТЕХНІКИ ДЗЮДО</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="techniques-grid">
+                <div class="technique-card">
+                    <div class="technique-header">
+                        <span class="technique-category">НАГЕ-ВАДЗА</span>
+                    </div>
+                    <h3 class="technique-name">Сеої-наге (背負投)</h3>
+                    <p class="technique-desc">Кидок через спину з захопленням руки на плече</p>
+                    <div class="technique-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Складність</span>
+                            <div class="difficulty-bar">
+                                <div class="difficulty-level" style="width: 60%"></div>
+                            </div>
+                            <span class="detail-value">Середня</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Класифікація</span>
+                            <span class="detail-value">Те-ваза (техніки рук)</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Рівень поясу</span>
+                            <div class="belt-indicator yellow"></div>
+                            <span class="detail-value">Жовтий пояс (5 кю)</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Використання на змаганнях</span>
+                            <div class="usage-bar">
+                                <div class="usage-level" style="width: 90%"></div>
+                            </div>
+                            <span class="detail-value">Дуже часто</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="technique-card">
+                    <div class="technique-header">
+                        <span class="technique-category">НАГЕ-ВАДЗА</span>
+                    </div>
+                    <h3 class="technique-name">О-гоші (大腰)</h3>
+                    <p class="technique-desc">Великий кидок через стегно</p>
+                    <div class="technique-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Складність</span>
+                            <div class="difficulty-bar">
+                                <div class="difficulty-level" style="width: 40%"></div>
+                            </div>
+                            <span class="detail-value">Легка</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Класифікація</span>
+                            <span class="detail-value">Коші-ваза (техніки стегна)</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Рівень поясу</span>
+                            <div class="belt-indicator white"></div>
+                            <span class="detail-value">Білий пояс (початківець)</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Використання на змаганнях</span>
+                            <div class="usage-bar">
+                                <div class="usage-level" style="width: 70%"></div>
+                            </div>
+                            <span class="detail-value">Часто</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="technique-card">
+                    <div class="technique-header">
+                        <span class="technique-category">НАГЕ-ВАДЗА</span>
+                    </div>
+                    <h3 class="technique-name">Учі-мата (内股)</h3>
+                    <p class="technique-desc">Внутрішній підсічок</p>
+                    <div class="technique-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Складність</span>
+                            <div class="difficulty-bar">
+                                <div class="difficulty-level" style="width: 80%"></div>
+                            </div>
+                            <span class="detail-value">Висока</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Класифікація</span>
+                            <span class="detail-value">Асі-ваза (техніки ніг)</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Рівень поясу</span>
+                            <div class="belt-indicator orange"></div>
+                            <span class="detail-value">Помаранчевий пояс</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Використання на змаганнях</span>
+                            <div class="usage-bar">
+                                <div class="usage-level" style="width: 95%"></div>
+                            </div>
+                            <span class="detail-value">Найчастіше</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section registration-section" id="registration">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">ЗАПИСАТИСЯ НА ТРЕНУВАННЯ</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="registration-container">
+                <div class="registration-info">
+                    <h3>Приєднуйтесь до нашої команди</h3>
+                    <p>Заповніть форму нижче, і наш тренер зв'яжеться з вами для обговорення деталей тренувань та розкладу занять.</p>
+                    
+                    <div class="info-benefits">
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Індивідуальний підхід до кожного студента</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Участь у змаганнях різного рівня</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Безкоштовні тренування для студентів коледжу</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Сучасне обладнання та зал</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="registration-form" id="registrationForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">Ім'я</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Прізвище</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Номер телефону</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+380" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Вік</label>
+                            <input type="number" id="age" name="age" min="16" max="25" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email (необов'язково)</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="experience">Досвід у дзюдо</label>
+                        <select id="experience" name="experience" required>
+                            <option value="">Оберіть рівень</option>
+                            <option value="beginner">Початківець (без досвіду)</option>
+                            <option value="some">Незначний досвід (до 1 року)</option>
+                            <option value="intermediate">Середній рівень (1-3 роки)</option>
+                            <option value="advanced">Просунутий рівень (3+ роки)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="goals">Ваші цілі та мотивація</label>
+                        <textarea id="goals" name="goals" rows="4" placeholder="Розкажіть, що ви хочете досягти, займаючись дзюдо..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <span>Відправити заявку</span>
+                        <svg class="submit-icon" viewBox="0 0 24 24" width="20" height="20">
+                            <path fill="currentColor" d="M2,21L23,12L2,3V10L17,12L2,14V21Z"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Секція дзюдо</h3>
+                    <p>Коммунальне учреждение "Донецкий областной специализированный профессиональный колледж спортивного профиля им. С. Бубки"</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Контакти</h4>
+                    <div class="contact-list">
+                        <a href="tel:+380997107296">📞 +380 99 710 72 96</a>
+                        <span>📍 г. Полтава, вул. Володимира Козака, 5</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Секція дзюдо. Всі права захищені.</p>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
 </body>
-</html> 
+</html>
