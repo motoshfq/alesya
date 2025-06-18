@@ -1,9 +1,0 @@
-This directory should contain the following images:
-
-1. profile-placeholder.jpg - A profile image of Olesya
-2. uchi-mata.jpg - An image demonstrating the Uchi-mata judo technique
-3. o-uchi-gari.jpg - An image demonstrating the O-uchi-gari judo technique
-4. osaekomi-waza.jpg - An image demonstrating the Osaekomi-waza holding technique
-5. header-bg.jpg - A background image for the header, possibly showing a judo mat or competition
-
-Please add these image files to this directory for the website to display properly. 
